@@ -7,3 +7,4 @@ java17 버전 설치
 이클립스 2022.03 버전사용
 
 교재 자바 마스터 사용
+![성적처리 프로그램](https://github.com/user-attachments/assets/1ed96aab-af03-4f91-9c14-558cea46a1ff)
