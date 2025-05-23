@@ -3,29 +3,25 @@ package ch02;
 public class IfExam2 {
 
 	public static void main(String[] args) {
-		// 1~6 ¼ıÀÚ ÁÖ»çÀ§
-		int num = (int) (Math.random()*6+1);
-		
+		// 1~6 ìˆ«ì ì£¼ì‚¬ìœ„
+		int num = (int) (Math.random() * 6 + 1);
+
 		if (num == 1) {
-			System.out.println("1¹øÀÌ ³ª¿Ô½À´Ï´Ù");
-		}else if (num == 2) {
-			System.out.println("2¹øÀÌ ³ª¿Ô½À´Ï´Ù");
-		}else if (num == 3) {
-			System.out.println("3¹øÀÌ ³ª¿Ô½À´Ï´Ù");
-		}else if (num == 4) {
-			System.out.println("4¹øÀÌ ³ª¿Ô½À´Ï´Ù.");
-		}else if (num == 5) {
-			System.out.println("5¹øÀÌ ³ª¿Ô½À´Ï´Ù");
-		}else if (num == 6) {
-			System.out.println("6¹øÀÌ ³ª¿Ô½À´Ï´Ù.");
-		}else {
-			System.out.println("ÇÁ·Î±×·¥ ¿À·ù·Î Á¡°ËÇØÁÖ¼¼¿ä");
+			System.out.println("1ë²ˆì´ ë‚˜ì™”ìŠµë‹ˆë‹¤");
+		} else if (num == 2) {
+			System.out.println("2ë²ˆì´ ë‚˜ì™”ìŠµë‹ˆë‹¤");
+		} else if (num == 3) {
+			System.out.println("3ë²ˆì´ ë‚˜ì™”ìŠµë‹ˆë‹¤");
+		} else if (num == 4) {
+			System.out.println("4ë²ˆì´ ë‚˜ì™”ìŠµë‹ˆë‹¤.");
+		} else if (num == 5) {
+			System.out.println("5ë²ˆì´ ë‚˜ì™”ìŠµë‹ˆë‹¤");
+		} else if (num == 6) {
+			System.out.println("6ë²ˆì´ ë‚˜ì™”ìŠµë‹ˆë‹¤.");
+		} else {
+			System.out.println("í”„ë¡œê·¸ë¨ ì˜¤ë¥˜ë¡œ ì ê²€í•´ì£¼ì„¸ìš”");
 		}
-		
-	
-	}
-			
 
 	}
 
-
+}

@@ -1,3 +1,4 @@
+
 package ch02;
 
 import java.util.Scanner;
@@ -5,44 +6,35 @@ import java.util.Scanner;
 public class SwitchIfExam {
 
 	public static void main(String[] args) {
-		// if »ç¿ëÇØ¼­ ·Î±×ÀÎ, È¸¿ø°¡ÀÔ ¸¸µé¾îº¸±â
-				
+		// if ì‚¬ìš©í•´ì„œ ë¡œê·¸ì¸, íšŒì›ê°€ì… ë§Œë“¤ì–´ë³´ê¸°
+
 		Scanner input = new Scanner(System.in);
-		
-		System.out.println("È¯¿µÇÕ´Ï´Ù.");
-		System.out.println("a. È¸¿ø°¡ÀÔ,·Î±×ÀÎ");
+
+		System.out.println("í™˜ì˜í•©ë‹ˆë‹¤.");
+		System.out.println("a. íšŒì›ê°€ì…,ë¡œê·¸ì¸");
 		System.out.println("b. ==");
 		System.out.print("(a~b)>>>");
 		char select = input.next().charAt(0);
-		
-		switch(select) {
-		case 'A' :
-		case 'a' :	
-			System.out.println("È¸¿ø°¡ÀÔ È­¸éÀ¸·Î ÀÌµ¿ÇÏ¼Ì½À´Ï´Ù");
-			System.out.println("1.È¸¿ø°¡ÀÔ ÇÏ±â");
-			System.out.println("2.·Î±×ÀÎ ÇÏ±â");
+
+		switch (select) {
+		case 'A':
+		case 'a':
+			System.out.println("íšŒì›ê°€ì… í™”ë©´ìœ¼ë¡œ ì´ë™í•˜ì…¨ìŠµë‹ˆë‹¤");
+			System.out.println("1.íšŒì›ê°€ì… í•˜ê¸°");
+			System.out.println("2.ë¡œê·¸ì¸ í•˜ê¸°");
 			System.out.print("(1~2)>>");
 			int subselect = input.nextInt();
-			switch(subselect) {
-			case 1 :
-				System.out.println("È¸¿ø°¡ÀÔ ÇÏ±â");
-				
+			switch (subselect) {
+			case 1:
+				System.out.println("íšŒì›ê°€ì… í•˜ê¸°");
+
 				break;
-			case 2 :
-				System.out.println("·Î±×ÀÎ ÇÏ±â");
+			case 2:
+				System.out.println("ë¡œê·¸ì¸ í•˜ê¸°");
 			}
-			
-			
-						
+
 		}
-			
-			
-		}
-		
-		
-		
-	
 
 	}
 
-
+}

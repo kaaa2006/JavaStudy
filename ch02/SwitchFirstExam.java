@@ -1,3 +1,4 @@
+
 package ch02;
 
 import java.util.Scanner;
@@ -8,35 +9,34 @@ public class SwitchFirstExam {
 		//
 		Scanner input = new Scanner(System.in);
 
-        System.out.println("³ªÀÌ¸¦ ÀÔ·ÂÇÏ¼¼¿ä:");
-        int age = input.nextInt();
+		System.out.println("ë‚˜ì´ë¥¼ ì…ë ¥í•˜ì„¸ìš”:");
+		int age = input.nextInt();
 
-        System.out.println("¿øÇÏ´Â À½·á ¹øÈ£¸¦ ¼±ÅÃÇÏ¼¼¿ä:");
-        System.out.println("1. Äİ¶ó");
-        System.out.println("2. »çÀÌ´Ù");
-        System.out.println("3. Ä¿ÇÇ");
+		System.out.println("ì›í•˜ëŠ” ìŒë£Œ ë²ˆí˜¸ë¥¼ ì„ íƒí•˜ì„¸ìš”:");
+		System.out.println("1. ì½œë¼");
+		System.out.println("2. ì‚¬ì´ë‹¤");
+		System.out.println("3. ì»¤í”¼");
 
-        int choice = input.nextInt();
+		int choice = input.nextInt();
 
-        switch (choice) {
-            case 1:
-                System.out.println("Äİ¶ó¸¦ ¼±ÅÃÇÏ¼Ì½À´Ï´Ù.");
-                break;
-            case 2:
-                System.out.println("»çÀÌ´Ù¸¦ ¼±ÅÃÇÏ¼Ì½À´Ï´Ù.");
-                break;
-            case 3:
-                // ³ªÀÌ Á¦ÇÑ Á¶°Ç Ã¼Å©
-                if (age >= 19) {
-                    System.out.println("Ä¿ÇÇ¸¦ ¼±ÅÃÇÏ¼Ì½À´Ï´Ù.");
-                } else {
-                    System.out.println("19¼¼ ¹Ì¸¸Àº Ä¿ÇÇ¸¦ ±¸¸ÅÇÒ ¼ö ¾ø½À´Ï´Ù.");
-                }
-                break;
-            default:
-                System.out.println("Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù.");
-        }
+		switch (choice) {
+		case 1:
+			System.out.println("ì½œë¼ë¥¼ ì„ íƒí•˜ì…¨ìŠµë‹ˆë‹¤.");
+			break;
+		case 2:
+			System.out.println("ì‚¬ì´ë‹¤ë¥¼ ì„ íƒí•˜ì…¨ìŠµë‹ˆë‹¤.");
+			break;
+		case 3:
+			// ë‚˜ì´ ì œí•œ ì¡°ê±´ ì²´í¬
+			if (age >= 19) {
+				System.out.println("ì»¤í”¼ë¥¼ ì„ íƒí•˜ì…¨ìŠµë‹ˆë‹¤.");
+			} else {
+				System.out.println("19ì„¸ ë¯¸ë§Œì€ ì»¤í”¼ë¥¼ êµ¬ë§¤í•  ìˆ˜ ì—†ìŠµë‹ˆë‹¤.");
+			}
+			break;
+		default:
+			System.out.println("ì˜ëª»ëœ ì„ íƒì…ë‹ˆë‹¤.");
+		}
 
-       
-    }
+	}
 }

@@ -5,30 +5,30 @@ import java.util.Scanner;
 public class IfExam4 {
 
 	public static void main(String[] args) {
-		// ÁÖ¹Î¹øÈ£ ³²³à ±¸ºĞ
-		System.out.println("ÁÖ¹Î¹øÈ£¸¦ ÀÔ·ÂÇÏ¼¼¿ä(-»ı·«)");
+		// ì£¼ë¯¼ë²ˆí˜¸ ë‚¨ë…€ êµ¬ë¶„
+		System.out.println("ì£¼ë¯¼ë²ˆí˜¸ë¥¼ ì…ë ¥í•˜ì„¸ìš”(-ìƒëµ)");
 		Scanner in = new Scanner(System.in);
-		
+
 		String ssn = in.next();
-		
+
 		char ssn2 = ssn.charAt(6);
 		int num = Character.getNumericValue(ssn2);
-				
-		if(num % 2 ==0) {
-			System.out.println("¿©ÀÚ");
-		} else if (num % 2 == 1) {	
-			System.out.println("³²ÀÚ");
+
+		if (num % 2 == 0) {
+			System.out.println("ì—¬ì");
+		} else if (num % 2 == 1) {
+			System.out.println("ë‚¨ì");
 		} else {
-			System.out.println("´Ù½Ã ÀÛ¼ºÇØÁÖ¼¼¿ä.");
-			
-		}// ¼ºº° ±¸ºĞ if¹® Á¾·á
-		int year = Integer.parseInt(ssn.substring(0,2));
-		if(num ==1 || num==2 || num ==5 || num==6) {
-			System.out.println("³ªÀÌ´Â" + (2023-(1900+ year)+1)+"ÀÔ´Ï´Ù");
-		}else if (num==3 || num ==4 || num==7||num==8) {
-			System.out.println("³ªÀÌ´Â"+(2023-(2000+year)+1)+"ÀÔ´Ï´Ù.");
+			System.out.println("ë‹¤ì‹œ ì‘ì„±í•´ì£¼ì„¸ìš”.");
+
+		} // ì„±ë³„ êµ¬ë¶„ ifë¬¸ ì¢…ë£Œ
+		int year = Integer.parseInt(ssn.substring(0, 2));
+		if (num == 1 || num == 2 || num == 5 || num == 6) {
+			System.out.println("ë‚˜ì´ëŠ”" + (2023 - (1900 + year) + 1) + "ì…ë‹ˆë‹¤");
+		} else if (num == 3 || num == 4 || num == 7 || num == 8) {
+			System.out.println("ë‚˜ì´ëŠ”" + (2023 - (2000 + year) + 1) + "ì…ë‹ˆë‹¤.");
 		}
-		
+
 	}
 
 }
